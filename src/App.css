@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.studentlist{
+  position: fixed;
+  width: 30vw;
+
+}
+
+.teacherlist{
+ position: fixed;
+  width: 30vw;
+  left: 32vw;
+}
+
+.courselist{
+  position: fixed;
+   width: 30vw;
+   left: 65vw;
+ }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif; /* 或者您选择的任何字体 */
+}
+
+.App h1, .App h2 {
+  text-align: center;
+}
+
+.ant-form {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 40px;
+  margin: 20px 0;
+}
+
+.ant-form-item {
+  margin-bottom: 24px; /* 调整表单项之间的间距 */
+}
+
+.ant-form-item-label > label {
+  color: #333; /* 字体颜色调整为深色 */
+}
+
+.ant-input,
+.ant-input-password {
+  border-radius: 4px;
+  border: 1px solid #d9d9d9; /* 给输入框加上边框 */
+}
+
+.ant-btn-primary {
+  width: 100%; /* 让按钮宽度与输入框相同 */
+  border-radius: 4px;
+}
+
+/* 调整Google登录按钮样式 */
+.google-login-btn {
+  display: block;
+  width: 100%; /* 宽度与其他表单元素相同 */
+  height: 40px; /* 高度与提交按钮相同 */
+  margin-top: 16px; /* 在按钮上方添加一些间距 */
+  border-radius: 4px; /* 圆角与表单统一 */
+  box-shadow: none; /* 移除阴影效果 */
+  border: 1px solid transparent; /* 透明边框 */
+  background-color: #4285F4; /* Google的蓝色 */
+  color: white;
+  text-align: center;
+  line-height: 40px; /* 垂直居中文本 */
+  cursor: pointer;
+}
+
+.google-login-btn:hover {
+  opacity: 0.9; /* 鼠标悬停时的效果 */
+}

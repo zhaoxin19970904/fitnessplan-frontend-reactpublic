@@ -1,0 +1,152 @@
+/* admin.css */
+
+.admin-container {
+    padding: 20px;
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .admin-header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .admin-header h1 {
+    color: #333;
+    margin-bottom: 0.5em; /* 为标题与搜索区域添加间距 */
+  }
+  
+  /* 搜索区域样式 */
+  .search-area {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* 表格样式 */
+  .admin-table {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 按钮样式 */
+  .button-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+  
+  .button-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  /* Ant Design 表格样式覆盖 */
+  .ant-table-thead > tr > th {
+    background-color: #fafafa;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .ant-table-tbody > tr > td {
+    color: #555;
+  }
+  
+  /* 分页样式 */
+  .ant-pagination {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .search-area,
+    .admin-table {
+      margin: 0;
+      border-radius: 0;
+    }
+  
+    .ant-pagination {
+      margin-top: 16px;
+    }
+  }
+  
+  .search-area {
+    background-image: url('../../public/fitness1.jpg');
+    background-repeat: repeat-x;
+    background-size: contain,cover;
+
+   
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-direction: column; /* 子元素垂直排列 */
+    gap: 20px; /* 子元素之间的间距 */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+
+.content{
+    min-height: 100vh;
+}
+
+.admin-buttons {
+    display: flex;
+    justify-content: space-around; /* Change to 'space-around' for equal spacing */
+    align-items: center;
+    margin: 20px 0; /* Add some margin at the top and bottom */
+  }
+  
+  .admin-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; /* Fixed height for the button */
+    padding: 0 20px; /* Horizontal padding */
+    font-size: 16px;
+    line-height: 40px; /* Line height to match the button height */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Use these if you want specific styles for each button */
+  .admin-button.add-user { background-color: #52c41a; }
+  .admin-button.add-course { background-color: #faad14; }
+  .admin-button.logout { background-color: #f5222d; }
+  
+  .admin-button:hover {
+    transform: scale(1.05); /* Slightly increase the button size on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ensure this is the last CSS rule to avoid being overridden */
+  .admin-button.add-user,
+  .admin-button.add-course,
+  .admin-button.logout {
+    color: white !important; /* Force white text color */
+    border-color: transparent !important; /* Remove border */
+  }
+  
+  /* Adjusting the content min-height */
+  .content {
+    min-height: calc(100vh - 40px - 20px); /* Subtract the height of the header and any additional padding/margins */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items to the top */
+  }
